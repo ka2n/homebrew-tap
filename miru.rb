@@ -5,7 +5,7 @@
 class Miru < Formula
   desc "A command-line tool for viewing package documentation with a man-like interface"
   homepage "https://github.com/ka2n/miru"
-  version "0.0.11"
+  version "0.0.12"
   license "MIT"
 
   depends_on "gh" => :optional
@@ -13,16 +13,16 @@ class Miru < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ka2n/miru/releases/download/v0.0.11/miru_v0.0.11_darwin_amd64.tar.gz"
-      sha256 "1ca2a9eea104356c2582764ea460b656f342f88b062e2a653da9f9374c329fc7"
+      url "https://github.com/ka2n/miru/releases/download/v0.0.12/miru_v0.0.12_darwin_amd64.tar.gz"
+      sha256 "c90a2d73c2077a0c6c20da16eeaaab7b7571e9b1a3331d28d32fca9fadb40181"
 
       def install
         bin.install "miru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ka2n/miru/releases/download/v0.0.11/miru_v0.0.11_darwin_arm64.tar.gz"
-      sha256 "393ca69a33bd7e35d3175cebaf13b365f924c1d018c46503a5056fd20cb1a6cf"
+      url "https://github.com/ka2n/miru/releases/download/v0.0.12/miru_v0.0.12_darwin_arm64.tar.gz"
+      sha256 "7de6260f4d17a6e911ad040c693779d9de625a20a32e8d1c6d16d46c7811b32a"
 
       def install
         bin.install "miru"
@@ -33,8 +33,8 @@ class Miru < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ka2n/miru/releases/download/v0.0.11/miru_v0.0.11_linux_amd64.tar.gz"
-        sha256 "ef3a5a74972a9dbaa372ef5a4ded49fdd906aae580a1081a5ac812e6bd4dd232"
+        url "https://github.com/ka2n/miru/releases/download/v0.0.12/miru_v0.0.12_linux_amd64.tar.gz"
+        sha256 "8c4d2e47fc6c49bf13ad9ec579cd3e32be3729e3a6010ab48483ed327b305d82"
 
         def install
           bin.install "miru"
@@ -43,8 +43,8 @@ class Miru < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ka2n/miru/releases/download/v0.0.11/miru_v0.0.11_linux_arm64.tar.gz"
-        sha256 "e4cc185ab0edcd71930e51b2f93a6fcc8cb2b97ddc208d9fe1b33ca6b203b5cd"
+        url "https://github.com/ka2n/miru/releases/download/v0.0.12/miru_v0.0.12_linux_arm64.tar.gz"
+        sha256 "08673eee7fc984fb9375cfcaff3408cc81cd3023ef0760c83062c0750c198dc1"
 
         def install
           bin.install "miru"
